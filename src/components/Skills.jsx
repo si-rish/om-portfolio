@@ -1,12 +1,14 @@
 import React from "react";
+import pp from "../assets/premiere-pro.png";
 
 const skills = [
   {
-    icon: "fab fa-adobe",
+    icon: pp,
     label: "Adobe Premiere Pro",
     colorClass: "text-indigo-400",
     barClass: "bg-indigo-500",
-    width: "95%",
+    width: "90%",
+    isImage: true
   },
   {
     icon: "fas fa-cut",
@@ -96,7 +98,11 @@ const Skills = () => {
               className="bg-slate-800 p-6 rounded-lg shadow-lg text-center transition-transform hover:scale-105"
             >
               <div className={`text-4xl ${skill.colorClass} mb-4`}>
-                <i className={skill.icon}></i>
+                {skill.isImage ? (
+                  <img src={skill.icon} alt={skill.label} className="w-16 h-16 mx-auto object-contain" />
+                ) : (
+                  <i className={skill.icon}></i>
+                )}
               </div>
               <h3 className="text-xl font-bold mb-2 text-white">{skill.label}</h3>
               <div className="w-full bg-gray-700 rounded-full h-2.5">
