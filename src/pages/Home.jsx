@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import "./Home.css"; // Contains .text-gradient, .hero-overlay, etc.
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
@@ -60,13 +61,12 @@ const Home = () => {
               I bring stories to life through cinematic edits and humor. With 4+ years of experience, I specialize in creating engaging content that captivates audiences.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <a
-                href="/work"
-               
+              <Link
+                to="/work"
                 className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-full transition flex items-center justify-center gap-2 pulse-effect"
               >
                 <i className="fab fa-youtube"></i> Watch Content
-              </a>
+              </Link>
               <a
                 href="#contact"
                 className="px-8 py-3 bg-transparent border-2 border-indigo-500 hover:bg-indigo-500/10 text-white font-semibold rounded-full transition flex items-center justify-center gap-2"
