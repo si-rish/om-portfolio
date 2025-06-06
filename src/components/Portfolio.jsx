@@ -93,7 +93,7 @@ const Portfolio = () => {
         {/* View All Projects Button */}
         <div className="mt-12 text-center">
           <a
-            href=""
+            href="/work"
             className="inline-flex items-center px-6 py-3 border-2 border-indigo-500 hover:bg-indigo-500/10 text-white font-medium rounded-full transition"
           >
             <i className="fab fa-youtube mr-2"></i> View All Projects
