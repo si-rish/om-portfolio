@@ -1,0 +1,63 @@
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-slate-900 py-10 border-t border-slate-800">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex-row justify-between items-center">
+          {/* Left side */}
+          <div className="mb-6 md:mb-0 text-center md:text-left">
+            <a href="#home" className="flex items-center justify-center md:justify-start">
+              <span className="text-xl font-bold text-gradient">Om Shende</span>
+            </a>
+            <p className="mt-2 text-sm text-gray-400">Video Editor & Content Creator</p>
+          </div>
+
+          {/* Social icons */}
+          <div className="flex space-x-6 justify-center md:justify-end">
+            <a
+              href="https://instagram.com/omshende_02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-pink-500 transition"
+            >
+              <i className="fab fa-instagram text-xl"></i>
+            </a>
+            <a
+              href="https://youtube.com/omeshende"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-red-500 transition"
+            >
+              <i className="fab fa-youtube text-xl"></i>
+            </a>
+            <a
+              href="mailto:omshende123@gmail.com"
+              className="text-gray-400 hover:text-indigo-400 transition"
+            >
+              <i className="fas fa-envelope text-xl"></i>
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom row */}
+        <div className="mt-8 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-sm text-gray-500 text-center md:text-left">
+            © 2023 Om Shende. All rights reserved.
+          </p>
+
+          <div className="mt-4 md:mt-0">
+            <a
+              href="#home"
+              className="text-sm text-gray-400 hover:text-indigo-400 transition"
+            >
+              <i className="fas fa-arrow-up mr-1"></i> Back to Top
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
