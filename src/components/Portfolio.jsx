@@ -26,7 +26,7 @@ const Portfolio = () => {
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                <a href="#" className="text-white text-2xl bg-indigo-600 rounded-full p-4">
+                <a href="" className="text-white text-2xl bg-indigo-600 rounded-full p-4">
                   <i className="fas fa-play"></i>
                 </a>
               </div>
@@ -50,7 +50,7 @@ const Portfolio = () => {
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                <a href="#" className="text-white text-2xl bg-indigo-600 rounded-full p-4">
+                <a href="" className="text-white text-2xl bg-indigo-600 rounded-full p-4">
                   <i className="fas fa-play"></i>
                 </a>
               </div>
@@ -74,7 +74,7 @@ const Portfolio = () => {
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
               <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
-                <a href="#" className="text-white text-2xl bg-indigo-600 rounded-full p-4">
+                <a href="" className="text-white text-2xl bg-indigo-600 rounded-full p-4">
                   <i className="fas fa-play"></i>
                 </a>
               </div>
@@ -93,7 +93,7 @@ const Portfolio = () => {
         {/* View All Projects Button */}
         <div className="mt-12 text-center">
           <a
-            href="#"
+            href=""
             className="inline-flex items-center px-6 py-3 border-2 border-indigo-500 hover:bg-indigo-500/10 text-white font-medium rounded-full transition"
           >
             <i className="fab fa-youtube mr-2"></i> View All Projects
