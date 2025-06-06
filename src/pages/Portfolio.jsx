@@ -78,9 +78,7 @@ const Portfolio = () => {
                     ))}
                   </div>
                   <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href="/work"
                     className="inline-block px-6 py-2 bg-indigo-500 text-white rounded-lg hover:bg-indigo-600 transition-colors"
                   >
                     View Project
