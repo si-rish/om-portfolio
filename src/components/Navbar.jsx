@@ -27,7 +27,7 @@ const Navbar = () => {
     <nav className="fixed w-full z-50 bg-gradient-to-b from-gray-900 to-transparent backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
-          <a href="/" className="flex-shrink-0 flex items-center">
+          <a href="#home" className="flex-shrink-0 flex items-center">
             <span className="text-xl font-bold text-gradient">Om Shende</span>
           </a>
           <div className="hidden md:block">

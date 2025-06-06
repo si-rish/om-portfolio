@@ -42,42 +42,6 @@ const Work = () => {
       img: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1159&q=80",
     },
     {
-      title: "Naqaab (Short Film)",
-      category: "short-films",
-      tags: ["DOP", "Actor"],
-      tools: [
-        { icon: "fas fa-film", label: "Adobe Premiere Pro" },
-        { icon: "fas fa-camera", label: "Sony A7III" },
-      ],
-      description:
-        "A psychological thriller short film exploring themes of identity and perception.",
-      img: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1159&q=80",
-    },
-    {
-      title: "Naqaab (Short Film)",
-      category: "short-films",
-      tags: ["DOP", "Actor"],
-      tools: [
-        { icon: "fas fa-film", label: "Adobe Premiere Pro" },
-        { icon: "fas fa-camera", label: "Sony A7III" },
-      ],
-      description:
-        "A psychological thriller short film exploring themes of identity and perception.",
-      img: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1159&q=80",
-    },
-    {
-      title: "Naqaab (Short Film)",
-      category: "short-films",
-      tags: ["DOP", "Actor"],
-      tools: [
-        { icon: "fas fa-film", label: "Adobe Premiere Pro" },
-        { icon: "fas fa-camera", label: "Sony A7III" },
-      ],
-      description:
-        "A psychological thriller short film exploring themes of identity and perception.",
-      img: "https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=1159&q=80",
-    },
-    {
       title: "Instagram Reels",
       category: "reels",
       tags: ["Content Creator", "Editor"],
@@ -167,7 +131,7 @@ const Work = () => {
         </div>
       </main>
 
-      
+      <Footer />
     </div>
   );
 };

@@ -62,10 +62,10 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <a
                 href="/work"
-                
+               
                 className="px-8 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-full transition flex items-center justify-center gap-2 pulse-effect"
               >
-                <i className="fab fa-youtube"></i> Watch My Content
+                <i className="fab fa-youtube"></i> Watch Content
               </a>
               <a
                 href="#contact"
