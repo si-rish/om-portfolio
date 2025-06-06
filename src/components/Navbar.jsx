@@ -23,16 +23,6 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Smooth scroll handler
-  const handleNavClick = (e, sectionId) => {
-    e.preventDefault();
-    const section = document.getElementById(sectionId.toLowerCase());
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setMenuOpen(false);
-    }
-  };
-
   return (
     <nav className="fixed w-full z-50 bg-gradient-to-b from-gray-900 to-transparent backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,7 +36,6 @@ const Navbar = () => {
                 <a
                   key={link}
                   href={`#${link}`}
-                  onClick={(e) => handleNavClick(e, link)}
                   className={`px-3 py-2 rounded-md text-sm font-medium transition capitalize ${
                     activeSection === link
                       ? "text-indigo-300 font-semibold"
@@ -91,7 +80,6 @@ const Navbar = () => {
               <a
                 key={link}
                 href={`#${link}`}
-                onClick={(e) => handleNavClick(e, link)}
                 className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800 capitalize"
               >
                 {link}

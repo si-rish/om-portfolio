@@ -1,5 +1,6 @@
 // src/pages/Work.jsx
 import React, { useEffect, useState } from "react";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar"; // Assuming you’ve moved your Home navbar into a separate component
 
 
