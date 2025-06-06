@@ -99,7 +99,7 @@ const Skills = () => {
             >
               <div className={`text-4xl ${skill.colorClass} mb-4`}>
                 {skill.isImage ? (
-                  <img src={skill.icon} alt={skill.label} className="w-16 h-16 mx-auto object-contain" />
+                  <img src={skill.icon} alt={skill.label} className="w-16 h-16 mx-auto object-contain brightness-199" />
                 ) : (
                   <i className={skill.icon}></i>
                 )}

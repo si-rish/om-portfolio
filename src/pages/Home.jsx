@@ -69,7 +69,7 @@ const Home = () => {
               </a>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  {["home", "about", "portfolio", "skills", "contact"].map((link) => (
+                  {["Home", "About", "Portfolio", "Skills", "Contact"].map((link) => (
                     <a
                       key={link}
                       href={`#${link}`}
@@ -82,9 +82,22 @@ const Home = () => {
                       {link}
                     </a>
                   ))}
+                  <div className="h-3 w-px bg-gray-600 mx-2"></div>
+                  <a
+                    href="/work"
+                    className="px-4 py-2 rounded-md text-sm font-medium bg-gradient-to-r from-indigo-500 to-pink-500 text-white hover:from-indigo-600 hover:to-pink-600 transition-all duration-300"
+                  >
+                    <i className="fas fa-film mr-2"></i>Work
+                  </a>
                 </div>
               </div>
-              <div className="md:hidden">
+              <div className="md:hidden flex items-center">
+                <a
+                  href="/work"
+                  className="px-4 py-2 rounded-md text-sm font-medium bg-gradient-to-r from-indigo-500 to-pink-500 text-white hover:from-indigo-600 hover:to-pink-600 transition-all duration-300 mr-4"
+                >
+                  <i className="fas fa-briefcase mr-2"></i>Work
+                </a>
                 <button
                   onClick={() => setMenuOpen(!menuOpen)}
                   className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white focus:outline-none"

@@ -45,7 +45,7 @@ const Portfolio = () => {
           <div className="project-card bg-slate-800 p-6 rounded-lg shadow-lg transition-transform hover:scale-[1.02]">
             <div className="relative overflow-hidden rounded-lg mb-4 h-48">
               <img
-                src="https://images.unsplash.com/photo-1592179902482-9f4941993e7c?auto=format&fit=crop&w=1772&q=80"
+                src="https://i.pinimg.com/736x/20/62/49/2062496223513ff6677c4a12698a0a7a.jpg"
                 alt="Content Creation"
                 className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
               />
