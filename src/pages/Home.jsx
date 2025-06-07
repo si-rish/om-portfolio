@@ -68,11 +68,14 @@ const Home = () => {
                 <i className="fab fa-youtube"></i> Watch Content
               </Link>
               <a
-                href="#contact"
+                href="/assets/Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-8 py-3 bg-transparent border-2 border-indigo-500 hover:bg-indigo-500/10 text-white font-semibold rounded-full transition flex items-center justify-center gap-2"
               >
-                <i className="fas fa-briefcase"></i> Hire Me
+                <i className="fas fa-file"></i> View Resume
               </a>
+              
             </div>
           </div>
           <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">

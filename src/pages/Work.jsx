@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
+import VideoReelSection from "../components/VideoReelSection";
+import PricringSection from "../components/PricringSection";
 
 const Work = () => {
   useEffect(() => {
@@ -130,139 +132,21 @@ const Work = () => {
 
         <main className="max-w-7xl mx-auto px-4 pb-20">
           {/* 1. Uploaded Reels Section */}
-          <section className="mb-20 fade-in">
-            <div className="flex justify-between items-center mb-8">
-              <div className="text-center mb-16">
-                <h2 className="text-2xl md:text-3xl  mb-4">
-                  Recent <span className="text-gradient">Projects</span>
-                </h2>
-                <div className="w-54 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto"></div>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
-              {/* Reel 1 */}
-              <div className="video-card rounded-xl overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-1 hover:shadow-lg transition-all duration-300 h-[400px]">
-                <video
-                  className="w-full aspect-[9/16] rounded-lg h-[80%] object-contain"
-                  controls
-                >
-                  <source src="/assets/reel1.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold">Infotainment</h3>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Informative engaging media reel
-                  </p>
-                </div>
-              </div>
-
-              {/* Reel 2 */}
-              <div className="video-card rounded-xl overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-1 hover:shadow-lg transition-all duration-300 h-[400px]">
-                <video
-                  className="w-full aspect-[9/16] rounded-lg h-[80%] object-contain"
-                  controls
-                >
-                  <source src="/assets/reel2.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold">Educational</h3>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Edited using CapCut PC
-                  </p>
-                </div>
-              </div>
-
-              {/* Reel 3 */}
-              <div className="video-card rounded-xl overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-1 hover:shadow-lg transition-all duration-300 h-[400px]">
-                <video
-                  className="w-full aspect-[9/16] rounded-lg h-[80%] object-contain"
-                  controls
-                >
-                  <source src="/assets/reel3.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold">Podcast Reel</h3>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Edited using AI Captions
-                  </p>
-                </div>
-              </div>
-
-              {/* Reel 4 */}
-              <div className="video-card rounded-xl overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-1 hover:shadow-lg transition-all duration-300 h-[400px]">
-                <video
-                  className="w-full aspect-[9/16] rounded-lg h-[80%] object-contain"
-                  controls
-                >
-                  <source src="/assets/reel4.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold">Storytelling</h3>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Cinematography & Editing
-                  </p>
-                </div>
-              </div>
-
-              {/* Reel 5 */}
-              <div className="video-card rounded-xl overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-1 hover:shadow-lg transition-all duration-300 h-[400px]">
-                <video
-                  className="w-full aspect-[9/16] rounded-lg h-[80%] object-contain"
-                  controls
-                >
-                  <source src="/assets/reel5.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold">Mini Vlog</h3>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Short daily video
-                  </p>
-                </div>
-              </div>
-
-              {/* Reel 6 */}
-              <div className="video-card rounded-xl overflow-hidden bg-gradient-to-br from-[#0f172a] to-[#1e293b] p-1 hover:shadow-lg transition-all duration-300 h-[400px]">
-                <video
-                  className="w-full aspect-[9/16] rounded-lg h-[80%] object-contain"
-                  controls
-                >
-                  <source src="/assets/reel6.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-                <div className="p-4">
-                  <h3 className="text-xl font-semibold">Cinematic Reel</h3>
-                  <p className="text-gray-400 text-sm mt-1">
-                    Videography & Visuals
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center">
-              <a
-                href="https://drive.google.com/drive/folders/example"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-8 py-3 rounded-full bg-gradient-to-r from-purple-400 via-pink-500 to-orange-400 text-white font-semibold hover:shadow-lg hover:scale-105 transition-transform duration-300"
-              >
-                View All Reels
-              </a>
-            </div>
-          </section>
+          <VideoReelSection />
 
           {/* 2. Featured Section – Naqaab */}
           <section className="mb-20 fade-in">
-            <div className="bg-gradient-to-r from-purple-900/20 via-pink-900/20 to-orange-900/20 p-1 rounded-2xl featured-video">
+            <div className="bg-gradient-to-r from-purple-900/20 via-pink-900/20 to-orange-900/20 p-5 rounded-2xl featured-video ">
               <div className="bg-[#0f172a] rounded-xl p-4">
-                <h2 className="text-3xl font-bold section-title mb-8">
-                  Featured Project
-                </h2>
+                <div className="text-center mb-16">
+                  <h2 className="text-2xl md:text-3xl mb-4 text-white">
+                    Featured{" "}
+                    <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                      Film
+                    </span>
+                  </h2>
+                  <div className="w-12 h-1  bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto"></div>
+                </div>
 
                 <div className="flex flex-col lg:flex-row gap-8">
                   <div className="flex-1">
@@ -327,13 +211,17 @@ const Work = () => {
           </section>
 
           {/* 3. YouTube Section */}
+
           <section className="mb-20 fade-in">
-            <div className="flex justify-between items-center mb-8">
+            <div className="flex justify-between items-center mb-4">
               <div className="text-center mb-16">
-                <h2 className="text-2xl md:text-3xl  mb-4">
-                  Youtube <span className="text-gradient">Uploads</span>
+                <h2 className="text-2xl md:text-3xl my-4 text-white ">
+                  Youtube{" "}
+                  <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Uploads
+                  </span>
                 </h2>
-                <div className="w-54 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto"></div>
+                <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto"></div>
               </div>
             </div>
 
@@ -407,7 +295,12 @@ const Work = () => {
               </a>
             </div>
           </section>
+          <div className="w-12 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto"></div>
+        {/* Pricing Section */}
+        <PricringSection />
+
         </main>
+
 
         {/* 4. Footer */}
       </div>

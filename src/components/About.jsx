@@ -1,4 +1,5 @@
 import React from "react";
+import VideoReelSection from "./VideoReelSection";
 
 const About = () => {
   return (
@@ -69,6 +70,7 @@ const About = () => {
         </div>
       </div>
     </section>
+    
   );
 };
 

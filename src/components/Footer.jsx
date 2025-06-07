@@ -44,7 +44,13 @@ const Footer = () => {
         {/* Bottom row */}
         <div className="mt-8 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500 text-center md:text-left">
-            © 2023 Om Shende. All rights reserved.
+            © 2023 Om Shende. All rights reserved.<br/> Crafted By <span>@Shirish </span>
+            <a href="https://github.com/si-rish" target="_blank" rel="noopener noreferrer" className="ml-2 hover:text-gray-300">
+              <i className="fab fa-github"></i>
+            </a>
+            <a href="tel:+9173788896387" className="ml-2 hover:text-gray-300">
+              <i className="fas fa-phone"></i>
+            </a>
           </p>
 
           <div className="mt-4 md:mt-0">
@@ -52,7 +58,7 @@ const Footer = () => {
               to="/"
               className="text-sm text-gray-400 hover:text-indigo-400 transition"
             >
-              <i className="fas fa-arrow-up mr-1"></i> Back to Top
+              <i className="fas fa-arrow-up mr-1"></i> Back to Home
             </Link>
           </div>
         </div>
