@@ -1,9 +1,8 @@
 import React from "react";
-import pp from "../assets/premiere-pro.png";
 
 const skills = [
   {
-    icon: pp,
+    icon: "/assets/premiere-pro.png",
     label: "Adobe Premiere Pro",
     colorClass: "text-indigo-400",
     barClass: "bg-indigo-500",

@@ -1,5 +1,4 @@
 import React from "react";
-import omImage from '../assets/om.jpg';
 
 const About = () => {
   return (
@@ -16,7 +15,7 @@ const About = () => {
           {/* Image */}
           <div>
             <img
-              src={omImage}
+              src="/assets/om.jpg"
               alt="Om Shende"
               className="rounded-lg shadow-2xl w-full max-w-md mx-auto"
             />
