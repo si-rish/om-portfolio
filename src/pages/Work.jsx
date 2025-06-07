@@ -197,7 +197,7 @@ const Work = () => {
                       </div>
                       <div>
                         <p className="text-gray-400">Camera:</p>
-                        <p className="text-white">Sony a7III</p>
+                        <p className="text-white">Iphone 14 pro </p>
                       </div>
                       <div>
                         <p className="text-gray-400">Sound Design:</p>

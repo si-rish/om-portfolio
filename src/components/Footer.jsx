@@ -33,7 +33,7 @@ const Footer = () => {
               <i className="fab fa-youtube text-xl"></i>
             </a>
             <a
-              href="mailto:omshende123@gmail.com"
+              href="mailto:shendeom02@gmail.com"
               className="text-gray-400 hover:text-indigo-400 transition"
             >
               <i className="fas fa-envelope text-xl"></i>
