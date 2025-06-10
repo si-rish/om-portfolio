@@ -6,10 +6,12 @@ import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Work from './pages/Work';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <div className="min-h-screen flex flex-col bg-primary">
         <main className="flex-grow">
           <Routes>

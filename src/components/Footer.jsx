@@ -44,7 +44,7 @@ const Footer = () => {
         {/* Bottom row */}
         <div className="mt-8 pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500 text-center md:text-left">
-            © 2023 Om Shende. All rights reserved.<br/> Crafted By <span>@Shirish </span>
+            © 2025-26 Om Shende. All rights reserved.<br/> Website By <span>@Shirish </span>
             <a href="https://github.com/si-rish" target="_blank" rel="noopener noreferrer" className="ml-2 hover:text-gray-300">
               <i className="fab fa-github"></i>
             </a>

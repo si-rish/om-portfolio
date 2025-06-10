@@ -13,9 +13,24 @@ const Contact = () => {
   const [emailJSLoaded, setEmailJSLoaded] = useState(false);
 
   // EmailJS Configuration
-  const SERVICE_ID = 'service_jcsb9xo';
-  const TEMPLATE_ID = 'template_mf1rnfd';
-  const PUBLIC_KEY = '1Hyse1_Cj24w9NqId';
+  const SERVICE_ID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const TEMPLATE_ID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+  const PUBLIC_KEY = process.env.REACT_APP_EMAILJS_PUBLIC_KEY;
+
+  // Debug logging
+  useEffect(() => {
+    console.log('=== EmailJS Configuration Check ===');
+    console.log('Environment Variables Status:', {
+      SERVICE_ID: process.env.REACT_APP_EMAILJS_SERVICE_ID ? '✅ Present' : '❌ Missing',
+      TEMPLATE_ID: process.env.REACT_APP_EMAILJS_TEMPLATE_ID ? '✅ Present' : '❌ Missing',
+      PUBLIC_KEY: process.env.REACT_APP_EMAILJS_PUBLIC_KEY ? '✅ Present' : '❌ Missing'
+    });
+    console.log('Actual Values:', {
+      SERVICE_ID,
+      TEMPLATE_ID,
+      PUBLIC_KEY
+    });
+  }, []);
 
   // Load EmailJS dynamically
   useEffect(() => {
@@ -107,6 +122,7 @@ const Contact = () => {
       };
 
       console.log('Sending email with params:', templateParams);
+      console.log('Using EmailJS config:', { SERVICE_ID, TEMPLATE_ID, PUBLIC_KEY });
 
       // Use EmailJS send method
       const response = await window.emailjs.send(
